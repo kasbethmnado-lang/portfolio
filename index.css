@@ -1,0 +1,204 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  
+}
+body{
+  background-color: #ddd;
+}
+h1{
+  font-size: clamp(24px, 4vw, 48px);
+}
+p, a{
+  font-size: clamp(14px, 1.5vw, 18px);
+  padding: 0.3em;
+}
+li{
+  font-size: clamp(14px, 1.5vw, 18px);
+  padding: 0.1em;
+}
+#menu{
+  position: fixed;
+  top: 0;
+  right: -50%;
+  width: 50%;
+  height: 100vh;
+  padding: 1.5em 0.5em;
+  transition: right 0.4s ease;
+  background-color: white;
+  z-index: 1000px;
+}
+#menu.show{
+  display: block;
+  right: 0;
+}
+
+#menu > ul li{
+  list-style: none;
+  padding: 0.4em;
+}
+#menu > ul li a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  
+  
+}
+div.header {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  
+  
+  
+}
+.column1{
+  padding:0.4em;
+  background-color: white;
+  width: 100%;
+  /*position: fixed;
+  z-index: 1000;*/
+  top: 0;
+  height: auto;
+  border-bottom: 0.1em solid gray;
+
+}
+
+.column2{
+  padding: 0.4em;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  outline: 1px solid #ddd;
+  border-radius: 5px;
+ 
+}
+.menu_btn{
+  padding: 0.3em 0.6em;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  outline: 1px solid #ddd;
+  cursor: pointer;
+}
+div.about{
+  padding: 0.3em;
+  outline: 0.1em solid #ddd;
+  background-color: white;
+}
+
+#skills{
+  padding: 0.3em;
+  background-color: white;
+  border-top: 0.2em solid lightgray;
+}
+ul{
+  list-style-position: inside;
+  padding-left: 0.5em;
+  list-style-type: disc;
+}
+ol{
+  list-style-position: inside;
+  padding-left: 0.5em;
+ 
+}
+#project{
+  padding: 0.3em;
+  background-color: white;
+  border-top: 0.2em solid lightgray;
+  outline: 0.1em solid #ddd;
+}
+
+#contact{
+  padding: 0.4em;
+  border-top: 4px solid rgb(16, 236, 16);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap:0.7em;
+  width: 100%;
+  height: auto;
+  outline: 0.1em solid lightgray;
+  border-radius: 15px;
+}
+
+
+.whatsapp{
+  padding: 0.9em 1.2em;
+  color: white;
+  background-color: rgb(11, 231, 11);
+  border-radius: 15px;
+  float: right;
+  cursor: pointer;
+
+}
+
+
+.phone{
+  background-color: coral;
+  color: black;
+  border-radius: 15px;
+  float: left;
+  padding: 0.4em;
+ 
+}
+
+.contact_1{
+padding: 0.4em;
+background-color: #333;
+}
+
+.contact_2{
+  padding: 0.4em;
+  font-size: clamp(15px, 1.5vw, 18px);
+  border-radius: 15px;
+}
+
+.contact_2:focus-within{
+  background-color: rgb(33, 238, 33);
+}
+
+input{
+  font-size: clamp(15px, 1.5vw, 18px);
+  width: 100%;
+  padding: 0.3em;
+}
+
+
+textarea{
+  width: 100%;
+  padding: 0.3em;
+  height: 20vh;
+}
+
+.send{
+  background-color: blue;
+  padding: 0.6em;
+  color: white;
+  font-size: clamp(15px, 1.5vw, 18px);
+  float: right;
+  border-radius: 15px;   
+}
+
+
+form{
+  justify-content: center;
+  border-radius: 15px;
+}
+
+
+.footer{
+  height: 70vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+}
+.footer > p{
+  color: white;
+}

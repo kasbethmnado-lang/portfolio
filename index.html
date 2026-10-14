@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+    <title>personal portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devie-width, intial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <body>
+    <div class="container" id="home">
+      <div class="header">
+
+        <div class="column1">
+          <h1 style="float: left; top:0;">My portfolio</h1>
+          <button style="float: right; top:0;" class="menu_btn" onclick="showMenu()"><i class="material-icons" >menu</i></button>
+        </div>
+
+        
+        <div class="column2">
+          <figure>
+             <img src="ekas.png" style="width:200px; height:auto;">
+             <figcaption style="text-align: center">kasbeth mnado</figcaption>
+          </figure>
+        
+        </div>
+         
+        
+        <nav class='nav' id="menu">
+          <ul>
+            <li><a href="#home" onclick="closeMenu()">PORTFOLIO</a></li>
+            <li><a href="#about" onclick="closeMenu()">ABOUT</a></li>
+            <li><a href="#skills" onclick="closeMenu()">SKILLS</a></li>
+            <li><a href="#project" onclick="closeMenu()">PROJECTS</a></li>
+            <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+          <div class="about" id="about">
+                <h2>about me</h2>
+               
+              <p>i am computer engineering student passionate about software development and technology. i am currently developing my skils in HTML, CSS, JavaScript.</p>
+              <p>my goal is to become a skilled <b>full stack developer</b> and bulid useful, reliable and user-friendly applications. I enjoy learning new technologies, solving programming problems, and turning ideas  into real world projects.</p>
+            </div>
+
+           <div id="skills">
+        <h2>skills</h2>
+        <h3>techinical skills</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>git & github</li>
+          <li>basic networking skill</li>
+        </ul>
+        <h3>other skills</h3>
+        <ul>
+          <li>problem solving</li>
+          <li>communication</li>
+          <li>teamwork</li>
+          <li>time management</li>
+          <li>continous learnig</li>
+        </ul>
+      </div>
+
+          <div id="project">
+        <h2>projects</h2>
+        <Ol>
+          <li>personal portifolio project</li>
+          <ul>
+            <li><b>technologies:</b> HTML, CSS, JavaScript </li>
+            <li>a responsive website that showcase your skills, education and projects</li>
+          </ul>
+          <li>bussines landing page</li>
+          <ul>
+            <li><b>technologies:</b> HTML and CSS</li>
+            <li>a professional webpage for small bussines, including services, informations and contacts</li>
+          </ul>
+          <li>calculator</li>
+          <ul>
+            <li><b>technologies:</b> HTML, CSS, JavaScript </li>
+            <li>a functional calculator that perform basic calculations</li>
+          </ul>
+          <li>to-do list</li>
+          <ul>
+            <li><b>technologies:</b> HTML, CSS, JavaScript </li>
+            <li>allow user to add, compolete and to delete tasks</li>
+          </ul>
+        </Ol>
+      </div>
+
+           <div id="contact">
+            <div class="contact_1">
+                 <button class="phone" style="background-color: coral"><i class="material-icons">call</i> +255795338107</button>
+            <button  class="whatsapp"><a style="color: white;" href="https://wa.me/255795338107" target="_blank" class="whatsapp-btn">
+  <i class="fa-brands fa-whatsapp">whatsapp</i>
+</a></button>
+            </div>
+            <div class="contact_2">
+              <form action="https://formspree.io/f/moevkpae" method="post">
+                <label>name:</label>
+                <input type="text" placeholder="enter your name" id="name" name="name" required><br>
+                <label>email:</label>
+                <input type="email" placeholder="enter email eg: kas@gamil.com" id="email" name="email" required><br>
+                <label>message:</label>
+                <textarea name="message" placeholder="your message" id="message" name="message" required></textarea>
+                <button type="submit" class="send" >send</button>
+              </form>
+            </div>
+</div>
+
+
+      </div>
+
+      <div class="footer">
+        <p>email: kasbethmnado@gmail.com</p>
+        <p>phone: +255795338107</p>
+        <P>location: Dar es salaam, Tanzania</P>
+        <p>developer: Ekas</p>
+        <p>company: Ekas Foundation</p>
+        <a href="https://www.linkedin.com/in/kasbeth-mnado-5353033a5?utm_source=share_via&utm_content=profile&utm_medium=member_androido" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="color: blue;">
+  <i class="fa-brands fa-linkedin"></i>
+</a>
+<p style="float: bottom; bottom: 0;">&copy: 2026 Ekas, All rights are reserved</p>
+      </div>
+    </div>
+    <script src="test.js"></script>
+  </body>
+</html>
+
+
+
+
