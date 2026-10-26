@@ -236,3 +236,20 @@ form{
 .footer > p{
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  div{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  div{
+    width: 100%;
+    margin: 0.3em;
+    padding: 10px;
+    height: auto;
+  }
+}
