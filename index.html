@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
- <head>
+ 
+     <head>
      <title>grid 12 column's layotu</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devie-width, intial-scale=1.0">
@@ -13,39 +14,39 @@
   <body>
     <div class="container" id="home">
       <div class="header">
-
-        <div class="column1">
+        <div class="header1">
           <h1 style="float: left; top:0;">My portfolio</h1>
+        </div>
+        <div class="header2">
+          
+          <nav class='nav' id="menu">
+           <ul>
+            <li><a href="#home" onclick="closeMenu()">Portfolio</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#project" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+           </ul>
+          </nav>
           <button style="float: right; top:0;" class="menu_btn" onclick="showMenu()"><i class="material-icons" >menu</i></button>
         </div>
+      </div>
 
-        
-        <div class="column2">
-          <figure>
+       
+        <div id="img">
+          <figure class="img">
              <img src="ekas.png" style="width:200px; height:auto;">
              <figcaption style="text-align: center">kasbeth mnado</figcaption>
           </figure>
         
         </div>
-         
-        
-        <nav class='nav' id="menu">
-          <ul>
-            <li><a href="#home" onclick="closeMenu()">PORTFOLIO</a></li>
-            <li><a href="#about" onclick="closeMenu()">ABOUT</a></li>
-            <li><a href="#skills" onclick="closeMenu()">SKILLS</a></li>
-            <li><a href="#project" onclick="closeMenu()">PROJECTS</a></li>
-            <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
 
       <div class="content">
           <div class="about" id="about">
                 <h2>about me</h2>
                
               <p>i am computer engineering student passionate about software development and technology. i am currently developing my skils in HTML, CSS, JavaScript.</p>
-              <p>my goal is to become a skilled <b>full stack developer</b> and bulid useful, reliable and user-friendly applications. I enjoy learning new technologies, solving programming problems, and turning ideas  into real world projects.</p>
+              <p>My goal is to become a skilled <b>full stack developer</b> and bulid useful, reliable and user-friendly applications. I enjoy learning new technologies, solving programming problems, and turning ideas  into real world projects.</p>
             </div>
 
            <div id="skills">
@@ -66,7 +67,7 @@
           <li>time management</li>
           <li>continous learnig</li>
         </ul>
-      </div>
+       </div>
 
           <div id="project">
         <h2>projects</h2>
@@ -92,7 +93,7 @@
             <li>allow user to add, compolete and to delete tasks</li>
           </ul>
         </Ol>
-      </div>
+       </div>
 
            <div id="contact">
             <div class="contact_1">
