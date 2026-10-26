@@ -1,135 +1,164 @@
 *{
   box-sizing: border-box;
   padding: 0;
-  margin:0;
+  margin: 0;
+}
+div{
   
 }
 body{
-  background-color: #ddd;
-}
-h1{
-  font-size: clamp(24px, 4vw, 48px);
-}
-p, a{
-  font-size: clamp(14px, 1.5vw, 18px);
-  padding: 0.3em;
-}
-li{
-  font-size: clamp(14px, 1.5vw, 18px);
-  padding: 0.1em;
-}
-#menu{
-  position: fixed;
-  top: 0;
-  right: -50%;
-  width: 50%;
-  height: 100vh;
-  padding: 1.5em 0.5em;
-  transition: right 0.4s ease;
-  background-color: white;
-  z-index: 1000px;
-}
-#menu.show{
-  display: block;
-  right: 0;
-}
-
-#menu > ul li{
-  list-style: none;
-  padding: 0.4em;
-}
-#menu > ul li a{
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  
-  
-}
-div.header {
-  display: flex;
+  margin: 0;
   padding: 0;
+  background-color: white;
+}
+
+div.header{
+  padding: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
   flex-direction: column;
-  width: 100%;
-  height: auto;
-  background-color: white;
-  
-  
-  
 }
-.column1{
-  padding:0.4em;
-  background-color: white;
-  width: 100%;
-  /*position: fixed;
-  z-index: 1000;*/
-  top: 0;
-  height: auto;
-  border-bottom: 0.1em solid gray;
-
-}
-
-.column2{
-  padding: 0.4em;
-  background-color: #eee;
+.header1{
+  justify-content: center;
+  border: 1px solid green;
   display: flex;
   justify-content: center;
-  margin: 1em;
-  outline: 1px solid #ddd;
-  border-radius: 5px;
+  margin: 0;
+  padding: 0.4em;
+  width: 100%;
+  
+}
+.header2{
+  border: 1px solid green;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  scrollbar-width: none;
  
+ 
+
+}
+#menu > ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 1em 2em;
+  width: 100%;
+  gap: 0.4em;
+  
+}
+#menu ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  background-color: #111;
+  padding: 0.4em;
+  
+}
+
+#menu ul li a:hover{
+  background-color: #222;
+  color: white;
+  padding: 0.4em;
 }
 .menu_btn{
-  padding: 0.3em 0.6em;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-  outline: 1px solid #ddd;
-  cursor: pointer;
-}
-div.about{
-  padding: 0.3em;
-  outline: 0.1em solid #ddd;
-  background-color: white;
+  display: none;
 }
 
-#skills{
-  padding: 0.3em;
+/* photo styling*/
+div#img{
   background-color: white;
-  border-top: 0.2em solid lightgray;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-ul{
-  list-style-position: inside;
-  padding-left: 0.5em;
-  list-style-type: disc;
+.img{
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px;
+  height: auto;
+  max-height: fit-content;
+  border-radius: 12px;
 }
-ol{
+
+/* styling mobile device*/
+div.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   list-style-position: inside;
-  padding-left: 0.5em;
- 
+}
+ /* styling about*/
+#about{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  background-color: white;
+  padding: 0.2em;
+  outline: 1px solid #ddd;
+  
+
+}
+h1,p{
+  padding: 0.1em;
+  font-size: 18px;
+}
+#skills{
+  border-top: 2px solid #ddd;
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.2em;
+  outline: 1px solid #ddd;
+  margin: 0.3em;
+  
 }
 #project{
-  padding: 0.3em;
+  border-top: 2px solid #ddd;
   background-color: white;
-  border-top: 0.2em solid lightgray;
-  outline: 0.1em solid #ddd;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.2em;
+  outline: 1px solid #ddd;
+  margin: 0.3em;
 }
 
+
+  
 #contact{
-  padding: 0.4em;
+  padding: 0.2em;
   border-top: 4px solid rgb(16, 236, 16);
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap:0.7em;
+  gap:20px;
   width: 100%;
+  max-width: 600px;
   height: auto;
-  outline: 0.1em solid lightgray;
+  outline: 1px solid lightgray;
   border-radius: 15px;
+  padding: 10px;
+}
+input::placeholder{
+  font-size: 12px;
 }
 
 
 .whatsapp{
-  padding: 0.9em 1.2em;
+  padding: 0.6em 2em;
   color: white;
   background-color: rgb(11, 231, 11);
   border-radius: 15px;
@@ -140,59 +169,64 @@ ol{
 
 
 .phone{
+  padding: 0.15em 0.6em;
   background-color: coral;
   color: black;
   border-radius: 15px;
   float: left;
-  padding: 0.4em;
  
 }
 
+
 .contact_1{
-padding: 0.4em;
+padding: 0.6em 0.2em;
 background-color: #333;
+width: 100%;
+height: auto;
+
 }
 
+
 .contact_2{
-  padding: 0.4em;
-  font-size: clamp(15px, 1.5vw, 18px);
+  padding: 10px;
+  font-size: 20px;
   border-radius: 15px;
 }
+
 
 .contact_2:focus-within{
   background-color: rgb(33, 238, 33);
 }
 
+
 input{
-  font-size: clamp(15px, 1.5vw, 18px);
+  font-size: 18px;
   width: 100%;
-  padding: 0.3em;
+  padding: 10px;
 }
-
-
 textarea{
   width: 100%;
-  padding: 0.3em;
-  height: 20vh;
+  padding: 0.4em;
+  height: auto;
 }
-
 .send{
   background-color: blue;
-  padding: 0.6em;
+  padding: 10px;
   color: white;
-  font-size: clamp(15px, 1.5vw, 18px);
+  font-size: 16px;
   float: right;
   border-radius: 15px;   
 }
-
-
 form{
   justify-content: center;
   border-radius: 15px;
 }
 
 
+/* --- footer styling*/
+
 .footer{
+  grid-area: footer;
   height: 70vh;
   background-color: black;
   color: white;
