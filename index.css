@@ -28,6 +28,7 @@ div.header{
   margin: 0;
   padding: 0.4em;
   width: 100%;
+  max-width: auto;
   
   
 }
@@ -70,7 +71,7 @@ div.header{
   padding: 0.4em;
 }
 .menu_btn{
-  display: ;
+  
 }
 
 /* photo styling*/
@@ -244,6 +245,7 @@ form{
     margin: 0;
     padding: 10px;
     width: 100%;
+    max-width: 800px;
     height: auto;
     
   }
